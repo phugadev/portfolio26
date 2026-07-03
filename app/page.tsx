@@ -6,6 +6,7 @@ import NavLinks from "@/components/NavLinks";
 import PlaceholderLink from "@/components/PlaceholderLink";
 import Prism from "@/components/Prism";
 import Reveal from "@/components/Reveal";
+import Image from "next/image";
 import {
   capstones,
   changelog,
@@ -38,6 +39,14 @@ export default function Page() {
       <header>
         <div className="nav">
           <a className="brand" href="#top">
+            <Image
+              src="/phugadev.png"
+              alt="phugadev avatar"
+              width={26}
+              height={26}
+              className="brand-avatar"
+              priority
+            />
             {site.brand}
           </a>
           <NavLinks />

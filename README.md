@@ -1,4 +1,4 @@
-# Signal — v5.4
+# Signal — v5.5
 
 Enric Trillo's portfolio, built as a versioned product. Next.js 15 (App Router) + TypeScript + React 19. No Tailwind, no UI libraries — hand-rolled CSS with a semantic wavelength token system. WebGL hero background via `ogl`.
 

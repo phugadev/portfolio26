@@ -177,10 +177,15 @@ export interface LogEntry {
 
 export const changelog: LogEntry[] = [
   {
+    v: "v5.5",
+    date: "2026-07",
+    msg: "phugadev pixel avatar in nav brand. Hamburger icon alignment fix on mobile. Scroll-cue restored to bottom-right absolute position.",
+    current: true,
+  },
+  {
     v: "v5.4",
     date: "2026-07",
     msg: "WebGL Prism hero background (ogl). Tech-stack marquee strip. Live London clock in header. Dispersion mobile redesign: 2×2 tappable band tiles replace unreadable SVG. Numbered credential/system IDs retained.",
-    current: true,
   },
   {
     v: "v5.3",
@@ -220,7 +225,7 @@ export const changelog: LogEntry[] = [
 ];
 
 export const site = {
-  version: "v5.4",
+  version: "v5.5",
   directionName: "SIGNAL",
   name: "Enric Trillo",
   brand: "enric.trillo",

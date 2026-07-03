@@ -177,10 +177,15 @@ export interface LogEntry {
 
 export const changelog: LogEntry[] = [
   {
+    v: "v5.3",
+    date: "2026-07",
+    msg: "Mobile hamburger menu with animated toggle. Credentials section replaces placeholder work. CSS dot-grid background. Hero cascade entrance animations. Capstone hover glow + lift. Active-section nav underline. Dispersion overflow fix.",
+    current: true,
+  },
+  {
     v: "v5.2",
     date: "2026-07",
-    msg: "Centred full-viewport hero with registration marks and scroll cue. Dispersion simplified to hover-highlight. Glitch made periodic. Full-width dividers removed. Ported to Next.js 15 + TypeScript.",
-    current: true,
+    msg: "Centred full-viewport hero with scroll cue. Dispersion simplified to hover-highlight. Glitch made periodic. Full-width dividers removed. Ported to Next.js 15 + TypeScript.",
   },
   {
     v: "v5.1",
@@ -210,11 +215,10 @@ export const changelog: LogEntry[] = [
 ];
 
 export const site = {
-  version: "v5.2",
+  version: "v5.3",
   directionName: "SIGNAL",
   name: "Enric Trillo",
   brand: "enric.trillo",
-  brandSuffix: "/ metasyde",
   eyebrow: "ENRIC TRILLO · SENIOR FULLSTACK ENGINEER",
   lede:
     "I design, build and ship production software end to end — the interface people touch, the systems underneath, and the cloud and intelligence layers bolted on top. Seven-plus years in production. Currently building two capstone products in the open to prove the whole pipeline, solo.",

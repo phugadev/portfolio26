@@ -36,7 +36,6 @@ export default function Page() {
         <div className="nav">
           <a className="brand" href="#top">
             {site.brand}
-            <span className="tld">&nbsp;{site.brandSuffix}</span>
           </a>
           <NavLinks />
           <span className="ver">

@@ -28,7 +28,6 @@ export default function Dispersion() {
       <div className={shown ? "legend dimming" : "legend"} style={{ padding: 0 }}>
         <svg
           viewBox="0 0 980 200"
-          style={{ overflow: "visible" }}
           role="img"
           aria-label="Schematic: one beam split by a prism into four labelled wavelengths — interface, systems, cloud, intelligence"
         >

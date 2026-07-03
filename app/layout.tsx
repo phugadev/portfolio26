@@ -1,5 +1,4 @@
 import type { Metadata, Viewport } from "next";
-import PixelField from "@/components/PixelField";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -25,10 +24,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body>
-        <PixelField />
-        <div className="wrap">{children}</div>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

@@ -6,10 +6,10 @@ import Reveal from "@/components/Reveal";
 import {
   capstones,
   changelog,
+  credentials,
   principles,
   site,
   wavelengths,
-  work,
   type BandKey,
 } from "@/lib/site";
 
@@ -48,10 +48,6 @@ export default function Page() {
       <main id="top">
         {/* ================= HERO — centred, full viewport ================= */}
         <div className="hero">
-          <span className="reg tl" aria-hidden="true" />
-          <span className="reg tr" aria-hidden="true" />
-          <span className="reg bl" aria-hidden="true" />
-          <span className="reg br" aria-hidden="true" />
 
           <p className="eyebrow">{site.eyebrow}</p>
           <h1>
@@ -59,7 +55,7 @@ export default function Page() {
             <br />
             one engineer,
             <br />
-            full <GlitchWord word="SPECTRUM" />.
+            full <GlitchWord word="SPECTRUM" /><span className="period">.</span>
           </h1>
           <p className="lede">
             I design, build and ship production software <strong>end to end</strong> —
@@ -142,25 +138,26 @@ export default function Page() {
           </div>
         </section>
 
-        {/* ================= WORK ================= */}
+        {/* ================= CREDENTIALS ================= */}
         <section id="work">
           <div className="container">
             <Reveal className="sec-head">
-              <h2>Selected work</h2>
-              <span className="idx">MOD.03 / ENGAGEMENTS</span>
+              <h2>Credentials</h2>
+              <span className="idx">MOD.03 / CERTIFIED · EXAMINED · UPSKILLED</span>
             </Reveal>
-            <Reveal className="work-list">
-              {work.map((wI) => (
-                <PlaceholderLink key={wI.id} href={null} className="work-row">
-                  <span className="wid">{wI.id}</span>
+            <Reveal className="cred-list">
+              {credentials.map((c) => (
+                <PlaceholderLink key={c.id} href={c.url} className="cred-row">
+                  <span className="cred-id">{c.id}</span>
                   <div>
+                    <p className="cred-provider">{c.provider}</p>
                     <h3>
-                      {wI.title}
-                      {wI.placeholder && <span className="ex">SWAP ME</span>}
+                      {c.title}
+                      <span className="cred-type">{c.type}</span>
                     </h3>
-                    <p>{wI.body}</p>
                   </div>
-                  <BandTags lit={wI.bands} />
+                  <span className="cred-year">{c.year}</span>
+                  <BandTags lit={c.bands} />
                 </PlaceholderLink>
               ))}
             </Reveal>

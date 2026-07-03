@@ -92,28 +92,55 @@ export const capstones: Capstone[] = [
   },
 ];
 
-export interface WorkItem {
+export type CredentialType = "CERT" | "COURSE" | "EXAM";
+
+export interface Credential {
   id: string;
+  type: CredentialType;
+  provider: string;
   title: string;
-  body: string;
+  year: string;
   bands: BandKey[];
-  placeholder: boolean;
+  url: string | null;
 }
 
-export const work: WorkItem[] = [
+/* Update titles to match your actual certifications */
+export const credentials: Credential[] = [
   {
-    id: "W-01",
-    title: "Platform rebuild for a scaling product team",
-    body: "Problem → decision → trade-off → outcome, in four sentences. Replace with a real engagement; the structure is the template, the content can't be.",
-    bands: ["590", "520"],
-    placeholder: true,
+    id: "C-01",
+    type: "CERT",
+    provider: "GOOGLE",
+    title: "Professional Cloud Architect",
+    year: "2025",
+    bands: ["470"],
+    url: null,
   },
   {
-    id: "W-02",
-    title: "Data-heavy internal tooling, shipped solo",
-    body: "Second labelled example. Two strong, specific case rows beat six vague ones — keep this list short and load-bearing.",
-    bands: ["520", "470"],
-    placeholder: true,
+    id: "C-02",
+    type: "CERT",
+    provider: "DEEPLEARNING.AI",
+    title: "Machine Learning Specialization",
+    year: "2024",
+    bands: ["405"],
+    url: null,
+  },
+  {
+    id: "C-03",
+    type: "COURSE",
+    provider: "DEEPLEARNING.AI",
+    title: "Generative AI with Large Language Models",
+    year: "2025",
+    bands: ["405"],
+    url: null,
+  },
+  {
+    id: "C-04",
+    type: "CERT",
+    provider: "SEMRUSH",
+    title: "SEO Fundamentals",
+    year: "2024",
+    bands: ["590"],
+    url: null,
   },
 ];
 

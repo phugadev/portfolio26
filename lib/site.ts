@@ -177,10 +177,15 @@ export interface LogEntry {
 
 export const changelog: LogEntry[] = [
   {
+    v: "v5.4",
+    date: "2026-07",
+    msg: "WebGL Prism hero background (ogl). Tech-stack marquee strip. Live London clock in header. Dispersion mobile redesign: 2×2 tappable band tiles replace unreadable SVG. Numbered credential/system IDs retained.",
+    current: true,
+  },
+  {
     v: "v5.3",
     date: "2026-07",
     msg: "Mobile hamburger menu with animated toggle. Credentials section replaces placeholder work. CSS dot-grid background. Hero cascade entrance animations. Capstone hover glow + lift. Active-section nav underline. Dispersion overflow fix.",
-    current: true,
   },
   {
     v: "v5.2",
@@ -215,7 +220,7 @@ export const changelog: LogEntry[] = [
 ];
 
 export const site = {
-  version: "v5.3",
+  version: "v5.4",
   directionName: "SIGNAL",
   name: "Enric Trillo",
   brand: "enric.trillo",

@@ -1,6 +1,6 @@
-# Signal — v5.3
+# Signal — v5.4
 
-Enric Trillo's portfolio, built as a versioned product. Next.js 15 (App Router) + TypeScript + React 19. No Tailwind, no UI libraries — hand-rolled CSS with a semantic wavelength token system.
+Enric Trillo's portfolio, built as a versioned product. Next.js 15 (App Router) + TypeScript + React 19. No Tailwind, no UI libraries — hand-rolled CSS with a semantic wavelength token system. WebGL hero background via `ogl`.
 
 ## Run
 
@@ -18,7 +18,9 @@ npm run build      # production build
 | All copy, capstones, credentials, changelog, chips, links | `lib/site.ts` |
 | Colours, type scale, spacing, every visual token | `app/globals.css` (`:root`) |
 | Page structure / section order | `app/page.tsx` |
-| Dispersion schematic behaviour | `components/Dispersion.tsx` |
+| Prism props (speed, glow, scale, animation type) | `app/page.tsx` → `<Prism ...>` |
+| Marquee tech-stack items | `components/Marquee.tsx` (`ITEMS` array) |
+| Dispersion schematic / mobile band grid | `components/Dispersion.tsx` |
 | Nav links + mobile menu + active-section tracking | `components/NavLinks.tsx` |
 | Glitch cadence | `components/GlitchWord.tsx` (`intervalMs` prop, default 7000) |
 

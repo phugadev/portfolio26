@@ -1,7 +1,10 @@
+import Clock from "@/components/Clock";
 import Dispersion from "@/components/Dispersion";
 import GlitchWord from "@/components/GlitchWord";
+import Marquee from "@/components/Marquee";
 import NavLinks from "@/components/NavLinks";
 import PlaceholderLink from "@/components/PlaceholderLink";
+import Prism from "@/components/Prism";
 import Reveal from "@/components/Reveal";
 import {
   capstones,
@@ -38,15 +41,28 @@ export default function Page() {
             {site.brand}
           </a>
           <NavLinks />
-          <span className="ver">
-            {site.version} {site.directionName}
-          </span>
+          <div className="nav-right">
+            <Clock />
+            <span className="ver">{site.version} {site.directionName}</span>
+          </div>
         </div>
       </header>
 
       <main id="top">
         {/* ================= HERO — centred, full viewport ================= */}
         <div className="hero">
+          <div className="prism-wrap" aria-hidden="true">
+            <Prism
+              animationType="rotate"
+              timeScale={0.35}
+              scale={4.0}
+              glow={0.85}
+              noise={0.15}
+              bloom={1.2}
+              transparent={true}
+              suspendWhenOffscreen={true}
+            />
+          </div>
 
           <p className="eyebrow">{site.eyebrow}</p>
           <h1>
@@ -84,6 +100,9 @@ export default function Page() {
             SCROLL DOWN <span className="cue-arrow">↓</span>
           </a>
         </div>
+
+        {/* ================= MARQUEE ================= */}
+        <Marquee />
 
         {/* ================= DISPERSION ================= */}
         <div className="container legend" id="fig01">

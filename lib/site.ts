@@ -112,7 +112,7 @@ export const credentials: Credential[] = [
     title: "SEO Fundamentals",
     year: "2023",
     bands: ["590"],
-    url: null,
+    url: "https://static.semrush.com/academy/certificates/6db34c1739/enric-jeremy-trillo-nchana_1.pdf",
   },
   {
     id: "C-02",

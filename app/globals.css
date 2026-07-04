@@ -381,6 +381,11 @@ section{padding:clamp(48px,8vh,96px) 0}
   border:1px solid var(--ink-faint);color:var(--ink-faint);letter-spacing:.05em;
   white-space:nowrap;
 }
+.cred-type.target{
+  border-style:dashed;color:var(--ink-faint);opacity:.6;
+}
+.cred-row.is-target .cred-provider,
+.cred-row.is-target h3{opacity:.55}
 .cred-year{font-family:var(--font-mono);font-size:11px;color:var(--ink-faint);text-align:right}
 @media(max-width:640px){
   .cred-row{grid-template-columns:1fr;gap:8px}

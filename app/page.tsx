@@ -174,13 +174,13 @@ export default function Page() {
             </Reveal>
             <Reveal className="cred-list">
               {credentials.map((c) => (
-                <PlaceholderLink key={c.id} href={c.url} className="cred-row">
+                <PlaceholderLink key={c.id} href={c.url} className={`cred-row${c.type === "TARGET" ? " is-target" : ""}`}>
                   <span className="cred-id">{c.id}</span>
                   <div>
                     <p className="cred-provider">{c.provider}</p>
                     <h3>
                       {c.title}
-                      <span className="cred-type">{c.type}</span>
+                      <span className={`cred-type${c.type === "TARGET" ? " target" : ""}`}>{c.type}</span>
                     </h3>
                   </div>
                   <span className="cred-year">{c.year}</span>

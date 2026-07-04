@@ -92,7 +92,7 @@ export const capstones: Capstone[] = [
   },
 ];
 
-export type CredentialType = "CERT" | "COURSE" | "EXAM";
+export type CredentialType = "CERT" | "COURSE" | "EXAM" | "TARGET";
 
 export interface Credential {
   id: string;
@@ -104,42 +104,41 @@ export interface Credential {
   url: string | null;
 }
 
-/* Update titles to match your actual certifications */
 export const credentials: Credential[] = [
   {
     id: "C-01",
     type: "CERT",
-    provider: "GOOGLE",
-    title: "Professional Cloud Architect",
-    year: "2025",
-    bands: ["470"],
+    provider: "SEMRUSH",
+    title: "SEO Fundamentals",
+    year: "2023",
+    bands: ["590"],
     url: null,
   },
   {
     id: "C-02",
-    type: "CERT",
-    provider: "DEEPLEARNING.AI",
-    title: "Machine Learning Specialization",
-    year: "2024",
-    bands: ["405"],
+    type: "TARGET",
+    provider: "GOOGLE",
+    title: "Professional Cloud Architect",
+    year: "2026",
+    bands: ["470"],
     url: null,
   },
   {
     id: "C-03",
-    type: "COURSE",
+    type: "TARGET",
     provider: "DEEPLEARNING.AI",
-    title: "Generative AI with Large Language Models",
-    year: "2025",
+    title: "Machine Learning Specialization",
+    year: "2026",
     bands: ["405"],
     url: null,
   },
   {
     id: "C-04",
-    type: "CERT",
-    provider: "SEMRUSH",
-    title: "SEO Fundamentals",
-    year: "2024",
-    bands: ["590"],
+    type: "TARGET",
+    provider: "DEEPLEARNING.AI",
+    title: "Generative AI with Large Language Models",
+    year: "2026",
+    bands: ["405"],
     url: null,
   },
 ];
@@ -240,7 +239,7 @@ export const site = {
     { k: "OPERATES AS", v: "METASYDE (LTD)", hot: false },
   ],
   stackNote:
-    '"Augmented" isn\'t a job title — it\'s a maintenance policy. The core is the career; the modules are deliberate additions, each taken to production depth before the next dock opens. Certifications: Google · DeepLearning.AI · Semrush.',
+    '"Augmented" isn\'t a job title — it\'s a maintenance policy. The core is the career; the modules are deliberate additions, each taken to production depth before the next dock opens. Certified: Semrush. Targeting: Google Cloud · DeepLearning.AI.',
   links: {
     email: "mailto:hello@metasyde.com",
     linkedin: "https://www.linkedin.com/in/enrictrillo/",

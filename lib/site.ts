@@ -61,6 +61,7 @@ export interface Capstone {
   proves: string;
   edge: string;
   bands: BandKey[]; // lit bands
+  url: string | null; // live product / repo — null renders an honest placeholder
 }
 
 export const capstones: Capstone[] = [
@@ -76,6 +77,7 @@ export const capstones: Capstone[] = [
       "Hard-domain AI shipped to production by one engineer — ingest, analysis, evidence, at scale.",
     edge: "Audio production & DSP background most fullstack engineers don't have.",
     bands: ["590", "520", "470", "405"],
+    url: null,
   },
   {
     id: "CAPSTONE 02",
@@ -89,6 +91,7 @@ export const capstones: Capstone[] = [
       "A revenue-facing AI product with a repeatable partnership motion, run end to end.",
     edge: "Positioning instinct applied where the market gap is narrative, not tech.",
     bands: ["590", "520", "405"],
+    url: null,
   },
 ];
 
@@ -176,10 +179,15 @@ export interface LogEntry {
 
 export const changelog: LogEntry[] = [
   {
+    v: "v5.6",
+    date: "2026-07",
+    msg: "Capstone cards get a proof-of-progress link (repo/live, honest placeholder until shipped). Résumé download CTA added to contact section.",
+    current: true,
+  },
+  {
     v: "v5.5",
     date: "2026-07",
     msg: "phugadev pixel avatar in nav brand. Hamburger icon alignment fix on mobile. Scroll-cue restored to bottom-right absolute position.",
-    current: true,
   },
   {
     v: "v5.4",
@@ -224,7 +232,7 @@ export const changelog: LogEntry[] = [
 ];
 
 export const site = {
-  version: "v5.5",
+  version: "v5.6",
   directionName: "SIGNAL",
   name: "Enric Trillo",
   brand: "enric.trillo",
@@ -245,5 +253,6 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/enrictrillo/",
     github: "https://github.com/phugadev",
     x: "https://x.com/phugadev",
+    resume: null as string | null, // drop /public/resume.pdf and set "/resume.pdf" to go live
   },
 };

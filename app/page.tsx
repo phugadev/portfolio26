@@ -159,6 +159,9 @@ export default function Page() {
                       </dd>
                     </div>
                   </dl>
+                  <PlaceholderLink href={c.url} className="cap-link">
+                    {c.url ? "View live →" : "Follow progress →"}
+                  </PlaceholderLink>
                 </Reveal>
               ))}
             </div>
@@ -286,6 +289,9 @@ export default function Page() {
                   </PlaceholderLink>
                   <PlaceholderLink href={site.links.linkedin} className="btn">
                     LinkedIn
+                  </PlaceholderLink>
+                  <PlaceholderLink href={site.links.resume} className="btn">
+                    Résumé ↓
                   </PlaceholderLink>
                 </div>
               </div>

@@ -357,6 +357,11 @@ section{padding:clamp(48px,8vh,96px) 0}
 .spec-row{display:grid;grid-template-columns:96px 1fr;gap:12px;align-items:baseline}
 .spec-row dt{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.14em;color:var(--ink-faint)}
 .spec-row dd{font-size:.9rem;color:var(--ink-dim)}
+.cap-link{
+  align-self:flex-start;font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;
+  color:var(--cap-hue,var(--ink-dim));transition:opacity .15s;
+}
+.cap-link:hover{opacity:.75}
 
 /* ============ CREDENTIALS ============ */
 .cred-list{display:flex;flex-direction:column}
